@@ -8,6 +8,9 @@ const useGetTheme = () => useContext(ThemeContext);
 export default function UseContextComponent() {
   const [theme, setTheme] = useState<Theme>('dark');
 
+
+  
+
   return (
     <ThemeContext.Provider value={theme}>
       <MyComponent />
